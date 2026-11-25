@@ -1,7 +1,8 @@
-class Item_Pedido:
-    def __init__(self, producto, cantidad):
-        self.producto = producto
-        self.cantidad = cantidad
+import sys
+from pathlib import Path
 
-    def calcular_subtotal(self):
-        return self.producto.calcular_precio() * self.cantidad
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from modelo.pedidos import ItemPedido
+
+__all__ = ["ItemPedido"]

@@ -16,7 +16,7 @@ Proyecto integrador de Programación Orientada a Objetos para un restaurante de 
 Desde la carpeta principal del repositorio:
 
 ```powershell
-py main.py
+py restaurante.py
 ```
 
 El sistema muestra un menú de consola para registrar clientes, consultar el menú, crear pedidos, cobrar y consultar el reporte de ventas.
@@ -27,4 +27,4 @@ Para ejecutar las pruebas:
 py pruebas.py
 ```
 
-La implementación nueva no requiere modificar las carpetas existentes `PRODUCTOS`, `PEDIDOS` y `METODO DE PAGO`. La variante B está implementada en `modelo/`, `restaurante.py`, `main.py` y `pruebas.py`.
+Las carpetas `PRODUCTOS`, `PEDIDOS` y `METODO DE PAGO` funcionan como módulos adaptadores de la implementación de `modelo/`. El punto de entrada del sistema es `restaurante.py` y las pruebas están en `pruebas.py`.

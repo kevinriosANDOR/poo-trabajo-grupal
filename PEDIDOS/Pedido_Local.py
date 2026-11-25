@@ -1,7 +1,10 @@
-class Pedido_Local(Pedido):
-    def __init__(self, nombre, precio, estado, objetos, cliente, mesa):
-        super().__init__(nombre, precio, estado, objetos, cliente)
-        self.mesa = mesa
-    def calcular_cargos(self):
-        super().calcular_cargos()
-        return 0
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from modelo.pedidos import PedidoLocal
+
+Pedido_Local = PedidoLocal
+
+__all__ = ["PedidoLocal", "Pedido_Local"]

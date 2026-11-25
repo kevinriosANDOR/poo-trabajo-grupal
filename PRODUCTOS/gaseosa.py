@@ -1,11 +1,10 @@
-from bebida import Bebida
+import sys
+from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-class gaseosa(Bebida):
-    def __init__(self, nombre, precio, tamaño, gaseosa):
-        super().__init__(
-            nombre, precio, tamaño, gaseosa=gaseosa, refresco_natural=False
-        )
+from modelo.productos import Gaseosa
 
-    def calcular_precio(self):
-        return super().calcular_precio()
+gaseosa = Gaseosa
+
+__all__ = ["Gaseosa", "gaseosa"]

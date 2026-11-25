@@ -1,9 +1,8 @@
-from producto import Producto
+import sys
+from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-class Bebida(Producto):
-    def __init__(self, nombre, precio, tamano_bebida, gaseosa, refresco_natural):
-        super().__init__(nombre, precio)
-        self.tamano_bebida = tamano_bebida
-        self.gaseosa = gaseosa
-        self.refresco_natural = refresco_natural
+from modelo.productos import Bebida
+
+__all__ = ["Bebida"]

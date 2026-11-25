@@ -1,10 +1,8 @@
-from metodo_pago import Metodo_Pago
+import sys
+from pathlib import Path
 
-class PagoTarjeta(Metodo_Pago):
-    def __init__(self, numero_tarjeta):
-        super().__init__("Tarjeta")
-        self.numero_tarjeta = numero_tarjeta
-        
-    def procesar_pago(self, monto):
-        ultimos = self.numero_tarjeta[-4:]
-        return f"Pago con tarjeta ****{ultimos} de Bs. {monto:.2f} aceptado"
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from modelo.pagos import PagoTarjeta
+
+__all__ = ["PagoTarjeta"]

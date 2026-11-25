@@ -6,7 +6,7 @@ from pago_tarjeta import PagoTarjeta
 pago1 = PagoEfectivo(100.0)
 print(pago1.procesar_pago(80.50))
 
-pago2 = PagoQR("QR-98765")
+pago2 = PagoQR("1234567890")
 print(pago2.procesar_pago(150.00))
 
 pago3 = PagoTarjeta("4500123456789012")

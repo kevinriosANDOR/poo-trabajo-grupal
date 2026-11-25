@@ -1,9 +1,8 @@
-from metodo_pago import Metodo_Pago
+import sys
+from pathlib import Path
 
-class PagoQR(Metodo_Pago):
-    def __init__(self, codigo_qr):
-        super().__init__("QR")
-        self.codigo_qr = codigo_qr
-        
-    def procesar_pago(self, monto):
-        return f"Pago por QR ({self.codigo_qr}) de Bs. {monto:.2f} aceptado"
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from modelo.pagos import PagoQR
+
+__all__ = ["PagoQR"]

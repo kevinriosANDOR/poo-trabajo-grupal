@@ -1,19 +1,8 @@
-class Pedido(Producto):
-    def __init__(self, nombre, precio, estado, objetos, cliente):
-        super().__init__(nombre, precio)
-        self.estado = estado
-        self.objetos = objetos
-        self.cliente = cliente
-    def agregar_producto(self, producto):
-        self.objetos.append(producto)
-    def quitar_producto(self, producto):
-        self.objetos.remove(producto)
-    def cambiar_estado(self, nuevo_estado):
-        self.estado = nuevo_estado
-    def calcular_total(self):
-        total = 0
-        for producto in self.objetos:
-            total += producto.precio
-        return total
-    def calcular_cargos(self):
-        return 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from modelo.pedidos import Pedido
+
+__all__ = ["Pedido"]
