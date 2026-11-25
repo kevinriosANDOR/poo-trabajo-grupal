@@ -35,7 +35,7 @@ Días de clase: miércoles y viernes.
 
 | N.º | Fecha | Herramienta | Tipo de uso | Consulta textual | Qué acepté | Qué modifiqué y por qué | Archivo o clase | ¿Lo explico sin ayuda? |
 |---|---|---|---|---|---|---|---|---|
-| 5 | 24/11/2026 | ChatGPT | Generación de código y revisión | Agregar lo faltante según el documento con la variante B sin modificar las tres carpetas existentes (texto tomado del registro inicial del repositorio; confirmar si es el texto exacto) | Estructura de modelo, reglas de la variante B, validaciones y pruebas | (completar: qué revisé y adapté, y por qué) | modelo/, restaurante.py, main.py, pruebas.py | (completar con sinceridad: Sí, Parcial o No) |
+| 5 | 24/11/2026 | – | – | No usé IA en este cambio. El commit "Agrega sistema completo con variante B" lo subió mi compañero kevinriosANDOR, y el registro inicial de ese commit indica que se hizo con ChatGPT. | – | – | modelo/, restaurante.py, main.py, pruebas.py | – |
 | 6 | 25/11/2026 | | | | | | | |
 | 7 | 25/11/2026 | | | | | | | |
 | – | 27/11/2026 | – | – | Defensa: sin uso de IA | – | – | – | – |
